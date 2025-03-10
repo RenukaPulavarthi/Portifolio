@@ -784,3 +784,71 @@ header {
       grid-template-columns: 1fr;
   }
 }
+ 
+@media screen and (max-width: 380px) {
+  /* Adjust header text to fit properly */
+  .header__content {
+    text-align: center;
+    padding: 5px;
+  }
+
+  .header__content h1 {
+    font-size: 45px; /* Reduce font size */
+    word-break: break-word;
+  }
+
+  .header__content h2 {
+    font-size: 30px; /* Adjust "Hi, I am" text size */
+    display: block;
+  }
+
+  .header__content h3 {
+    font-size: 25px; /* Adjust "coder" text */
+  }
+
+  .header__content p {
+    font-size: 16px;
+    padding: 0 10px; /* Add padding for better readability */
+  }
+
+  /* Fix button spacing */
+  .header__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Ensure buttons are full width */
+  .header__btns button {
+    width: 100%;
+  }
+
+  /* Fix name, phone, and email layout */
+  .intro__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .col{
+    display: none;
+  }
+  .intro__grid h5 {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 3px;
+  }
+
+  .intro__grid p {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* Ensure the image fits */
+  .header__image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
